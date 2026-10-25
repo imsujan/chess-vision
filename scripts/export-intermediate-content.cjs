@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path'),vm=require('vm'),{createRequire}=require('module');
+const root=path.resolve(__dirname,'..'),out=path.resolve(process.argv[2]||path.join(root,'app/build/quality'));fs.mkdirSync(out,{recursive:true});
+const file=path.join(root,'tests/trainer.test.cjs'),code=fs.readFileSync(file,'utf8'),cut=code.indexOf("test('all controller");if(cut<0)throw Error('Controller fixture boundary missing');
+const realRequire=createRequire(file),context={require:n=>n==='node:test'?{test:()=>{}}:realRequire(n),__dirname:path.dirname(file),console,URL,Blob,AbortController};
+vm.runInNewContext(code.slice(0,cut)+';globalThis.auditFixture=fixture();',context);const run=code=>context.auditFixture.run(code);
+fs.writeFileSync(path.join(out,'validated-exercises.json'),run('JSON.stringify([...validatedCatalog(),...assessmentPool(),...calibrationCatalog()])'));
+fs.writeFileSync(path.join(out,'source-exercises.json'),run('JSON.stringify(REAL_GAME_EXERCISES)'));
+const manifest=JSON.parse(run(`JSON.stringify({contentVersion:CONTENT_VERSION,validSourceQuestions:validatedCatalog().length,challengePools:Object.fromEntries(['supported','standard','stretch'].map(c=>{appData.learning.training.challenge=c;return [c,intermediatePool().length]})),calibration:calibrationCatalog().length,assessment:assessmentPool().length,excluded:REAL_GAME_EXERCISES.filter(e=>!makeValidatedExercise(e)).map(e=>({id:e.id,mode:e.mode})),scope:'Geometric recognition only; not engine-certified best moves or material gains'})`));
+const policy=JSON.parse(fs.readFileSync(path.join(root,'evidence/intermediate-content-policy.json'),'utf8'));require('assert/strict').deepEqual(manifest.challengePools,policy.challengePools);require('assert/strict').deepEqual(manifest.excluded.map(e=>e.id).sort(),policy.excludedSourceIds.slice().sort());require('assert/strict').equal(manifest.calibration,policy.calibration);require('assert/strict').equal(manifest.assessment,policy.assessment);
+fs.writeFileSync(path.join(out,'catalog-manifest.json'),JSON.stringify(manifest,null,2));console.log(JSON.stringify(manifest));

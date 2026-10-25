@@ -1,0 +1,9 @@
+plugins { id 'com.android.application' version '8.2.2' }
+repositories { google(); mavenCentral() }
+android {
+    namespace 'app.chessvision.trainer.qa'
+    compileSdk 34
+    defaultConfig { applicationId 'app.chessvision.trainer.qa'; minSdk 21; targetSdk 34; versionCode 1; versionName '1' }
+    signingConfigs { debug { storeFile file('C:/magniProjects/projects/chess-vision-android/.tooling/android-user-home/debug.keystore'); storePassword 'android'; keyAlias 'androiddebugkey'; keyPassword 'android' } }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+}

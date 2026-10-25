@@ -1,0 +1,19 @@
+/* Woodpecker Method Spaced Repetition CSS */
+.woodpecker-strip {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: var(--surface-2, #1e293b);
+  border-radius: 8px;
+  color: var(--text-1, #f8fafc);
+}
+
+.woodpecker-cycle-badge {
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  background: var(--brand-accent, #22c55e);
+  color: #0f172a;
+}

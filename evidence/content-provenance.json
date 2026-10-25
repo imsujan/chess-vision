@@ -1,0 +1,10 @@
+{
+  "source": "https://database.lichess.org/lichess_db_puzzle.csv.zst",
+  "license": "CC0-1.0",
+  "total": 480,
+  "practice": 384,
+  "assessment": 96,
+  "distinctGames": 480,
+  "validation": "python-chess 1.11.2: legal source FEN, complete supplied PV replay, first setup move applied, target attackers and defenders recorded",
+  "selection": "First suitable distinct games from a streamed prefix. This is not a random population sample or a certified best-move curriculum."
+}

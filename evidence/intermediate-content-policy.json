@@ -1,0 +1,27 @@
+{
+  "calibration": 24,
+  "challengePools": {
+    "supported": 259,
+    "standard": 211,
+    "stretch": 160
+  },
+  "excludedSourceIds": [
+    "game-0008Q",
+    "game-003Ec",
+    "game-003YF",
+    "game-0071K",
+    "game-008lc",
+    "game-00A8H",
+    "game-00Aas",
+    "game-00CcK",
+    "game-00CtD",
+    "game-00DBP",
+    "game-00DdW",
+    "game-00FF5",
+    "game-00Hfa",
+    "game-00InW"
+  ],
+  "assessment": 49,
+  "scope": "Real-game geometric recognition. No best-move, winning-material or safety certification.",
+  "contentVersion": 2
+}

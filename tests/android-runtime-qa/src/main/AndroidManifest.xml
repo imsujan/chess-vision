@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <application android:testOnly="true" android:label="Chess Vision runtime tests">
+    <provider android:name=".SampleProvider" android:authorities="app.chessvision.trainer.qa.samples" android:exported="true" android:grantUriPermissions="true" />
+  </application>
+  <instrumentation android:name=".RuntimeProbe" android:targetPackage="app.chessvision.trainer" android:functionalTest="true" android:label="Installed APK runtime checks" />
+</manifest>

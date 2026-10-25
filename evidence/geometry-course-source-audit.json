@@ -1,0 +1,17 @@
+{
+  "sourceSha256": "a52f769a302a49a61a24b6ad9f673800414c512a64f8ec34889cf7a2bbf9d878",
+  "inputRecords": 228,
+  "chapterExamples": 224,
+  "chapters": 11,
+  "playableLines": 218,
+  "conceptDiagrams": 6,
+  "legalMainlinePlies": 2275,
+  "excludedNonChapterRecords": [
+    "Introduction on Chess Geometry",
+    "Extra: Puzzle Hour in Barcelona",
+    "Extra: Blindfold Chess",
+    "Outro"
+  ],
+  "structuredSideBranchesNotIncluded": 0,
+  "nullMovesAreNotDrills": true
+}

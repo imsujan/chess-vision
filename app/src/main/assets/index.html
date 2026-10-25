@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#262522">
+  <title>Chess Vision · See the connections</title>
+  <link rel="stylesheet" href="vision.css">
+  <link rel="stylesheet" href="visual.css">
+  <link rel="stylesheet" href="workspace.css">
+  <link rel="stylesheet" href="reference.css">
+  <link rel="stylesheet" href="woodpecker.css">
+  <script src="storage.js"></script>
+  <script>try { document.documentElement.dataset.theme = readPersistentItem('chess_vision_theme') || 'dark'; } catch (_) {}</script>
+  <script src="vendor/chess-rules.js" defer></script>
+  <script src="trainer.js" defer></script>
+  <script src="presentation.js" defer></script>
+  <script src="curriculum.js" defer></script>
+  <script src="contrasts.js" defer></script>
+  <script src="sets.js" defer></script>
+  <script src="positions.js" defer></script>
+  <script src="recognition.js" defer></script>
+  <script src="learning.js" defer></script>
+  <script src="visual-checks.js" defer></script>
+  <script src="visual-flow.js" defer></script>
+  <script src="training-content.js" defer></script>
+  <script src="geometry-course-data.js" defer></script>
+  <script src="geometry-ray-engine.js" defer></script>
+  <script src="engine-client.js" defer></script>
+  <script src="woodpecker.js" defer></script>
+  <script src="pgn-importer.js" defer></script>
+  <script src="geometry-course.js" defer></script>
+  <script src="experience.js" defer></script>
+</head>
+<body data-tab="today">
+  <svg class="sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="i-vision" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10H3Z M9 20v-7h6v7"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="m12 12 8-8 M16 4h4v4"/></symbol>
+    <symbol id="i-games" viewBox="0 0 24 24"><path d="M4 4h6v6H4Z M14 4h6v6h-6Z M4 14h6v6H4Z M14 14h6v6h-6Z"/></symbol>
+    <symbol id="i-progress" viewBox="0 0 24 24"><path d="M4 20V4 M4 20h17 M8 15l4-5 4 2 5-7"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16 m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-flash" viewBox="0 0 24 24"><path d="m13 2-9 12h7l-1 8 10-13h-8Z"/></symbol>
+    <symbol id="i-lines" viewBox="0 0 24 24"><path d="m4 20 16-16 M4 4l16 16 M12 3v18 M3 12h18"/><circle cx="12" cy="12" r="4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6Z m-4 9 3 3 5-6"/></symbol>
+    <symbol id="i-swap" viewBox="0 0 24 24"><path d="M3 7h17l-4-4 M21 17H4l4 4 M20 7l-4 4 M4 17l4-4"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2 M12 20v2 M2 12h2 M20 12h2 M5 5l1 1 M18 18l1 1 M5 19l1-1 M18 6l1-1"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="M3 9h4l5-4v14l-5-4H3Z M16 8q5 4 0 8 M19 4q9 8 0 16"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6Q7 2 3 5v15q4-3 9 0 5-3 9 0V5q-4-3-9 1Zm0 0v14"/></symbol>
+  </defs></svg>
+  <div class="app-shell">
+    <header class="app-header">
+      <a class="brand" href="#today" aria-label="Chess Vision home"><span class="brand-mark"><svg class="icon"><use href="#i-vision"/></svg></span><span><strong>chess<span class="brand-light">vision</span></strong><small id="headerSubLabel">See the connections.</small></span></a>
+      <div class="header-actions"><button id="btnSoundToggle" class="icon-button" aria-label="Mute sound" aria-pressed="false"><svg class="icon"><use href="#i-sound"/></svg></button><button id="btnThemeToggle" class="icon-button" aria-label="Switch to light theme"><svg class="icon"><use href="#i-sun"/></svg></button></div>
+    </header>
+    <p id="storageWarning" class="notice warning hidden" role="alert">Progress cannot be saved on this device right now. Keep this session open and export a backup from Progress.</p>
+    <main>
+      <section id="viewToday" class="view flex flex-col gap-4" aria-label="Today"><div class="page-context" role="region" tabindex="0" aria-label="Today content">
+        <div class="page-heading"><div><span class="eyebrow" id="todayDate">YOUR DAILY PRACTICE</span><h1>Today</h1></div><span class="local-tag"><span></span> On-device</span></div>
+        <article class="sprint-hero">
+          <div class="hero-copy"><span class="eyebrow">DAILY VISION SPRINT</span><h2>A clearer<br>view.</h2><p id="homeRecommendation">Eight positions. One clearer view.</p><span class="session-meta">8 positions · ~5 min</span></div>
+          <figure class="hero-figure"><div id="previewBoard" class="preview-board" aria-hidden="true"></div><figcaption>Two attackers. One target.</figcaption></figure>
+          <button id="btnPrimaryPractice" class="button primary hero-cta home-primary">Start today’s practice</button><button hidden id="btnStartDailySprint">Daily practice</button>
+          <div class="hero-footnote">Personalized to the patterns you need most</div>
+        </article>
+        <div class="stats-strip" aria-label="Lifetime training statistics"><div><strong id="todayStatAttempts">0</strong><span>Independent attempts</span></div><div><strong id="todayStatAccuracy">—</strong><span>Accuracy</span></div><div><strong id="todayStatSpeed">—</strong><span>Median correct</span></div></div>
+        <article class="panel"><span class="eyebrow">1200–1800 · REAL-GAME RECOGNITION</span><h2>Train at your level</h2><p id="trainingProfileStatus"></p><label class="field-label" for="trainingChallenge">Recognition challenge</label><select id="trainingChallenge" class="training-difficulty"><option value="supported">Supported real-game practice</option><option value="standard">Standard · 1200–1800</option><option value="stretch">Stretch · busier positions</option></select><button id="btnCalibration" class="button">Calibrate · 12 positions</button></article><details id="modeExplorer" class="mode-explorer"><summary>Explore exercises</summary>        
+        <div class="mode-grid">
+          <button id="btnModeXray" class="mode-card"><span class="mode-icon mint"><svg class="icon"><use href="#i-lines"/></svg></span><span class="mode-meta">01 / CONNECTIONS</span><strong>Geometry X-Ray</strong><span>Trace attacks, pins &amp; pressure.</span><span class="card-arrow" aria-hidden="true">↗</span></button>
+          <button id="btnModeFlash" class="mode-card"><span class="mode-icon gold"><svg class="icon"><use href="#i-flash"/></svg></span><span class="mode-meta">02 / RECOGNITION</span><strong>Flash Vision</strong><span>A brief look. A lasting picture.</span><span class="card-arrow" aria-hidden="true">↗</span></button>
+          <button id="btnModeIllusion" class="mode-card"><span class="mode-icon lilac"><svg class="icon"><use href="#i-shield"/></svg></span><span class="mode-meta">03 / DISCERNMENT</span><strong>Pattern or illusion?</strong><span>Find what the first glance misses.</span><span class="card-arrow" aria-hidden="true">↗</span></button>
+          <button id="btnModeBeforeAfter" class="mode-card"><span class="mode-icon blue"><svg class="icon"><use href="#i-swap"/></svg></span><span class="mode-meta">04 / VISUALIZATION</span><strong>Before &amp; after</strong><span>See what one move changes.</span><span class="card-arrow" aria-hidden="true">↗</span></button>
+        </div>
+        <div class="additional-modes"><button id="btnThreatScan" class="button">Threat Scan</button><button id="btnTraceRelations" class="button">Relationship Tracing</button><button id="btnMixedRecognition" class="button">Mixed Recognition</button><button id="btnFocusedSession" class="button">Focused session · ~20 min</button></div>
+        <label class="practice-toggle" for="chkUntimedMode"><span><strong>Take your time</strong><small>Keep pieces visible in Flash Vision.</small></span><input id="chkUntimedMode" type="checkbox" role="switch"><span class="switch-track" aria-hidden="true"></span></label>
+<button id="btnPersonalGameMode" class="button">Personal Game Vision</button></details>
+        <article class="panel learning-home"><span class="eyebrow">YOUR LEARNING PATH</span><h2 id="nextLessonLabel">Board fluency</h2><button id="btnContinueLearning" class="button primary">Continue learning →</button><button id="btnReviewDue" class="button">Spaced review · <span id="dueReviewCount">0</span> due</button></article>
+
+      </div></section>
+
+      <section id="viewLearn" class="view hidden flex-col gap-4" aria-label="Learning path"><div class="page-context" role="region" tabindex="0" aria-label="Learn content">
+        <div class="page-heading"><div><span class="eyebrow">A SYSTEM FOR SEEING</span><h1 tabindex="-1">Learn by seeing</h1></div></div>
+        <div id="learningCatalog" class="flex flex-col gap-4"><section class="panel course-path" aria-labelledby="geometryPathTitle"><span class="eyebrow">PERSONAL COURSE STUDY</span><h2 id="geometryPathTitle">Maurice Ashley · Chess Geometry</h2><p>11 chapters · Study → Recall → Spaced review</p><p id="courseOverview"></p><div class="lesson-actions"><button id="btnCourseContinue" class="button primary">Start geometry path →</button><button id="btnCourseReview" class="button">Review due · 0</button></div><details><summary>Browse chapters &amp; examples</summary><div id="geometryChapterList"></div></details><details><summary>About this personal study pack</summary><p>Derived from your supplied PGN of The Secrets of Chess Geometry, attributed in the source to GM Maurice Ashley and Chessable. Includes compositions and concept diagrams. Course recall and reviews are tracked separately from normal practice and assessment. The course line is a reference, not an engine verdict on every alternative.</p></details></section><div id="capabilityCards" class="capability-grid"></div><div id="learningLessonList" class="learning-lesson-list"></div><details class="panel"><summary>Check your baseline</summary><button id="btnDiagnostic" class="button">12 fresh positions</button></details><details class="panel"><summary>About the learning path</summary><p id="learningInventory" class="page-intro"></p></details></div>
+        <article id="lessonDetail" class="panel hidden flex flex-col gap-3"><button id="btnBackToPath" class="text-button">← All lessons</button><span id="lessonStage" class="eyebrow"></span><h2 id="lessonName" tabindex="-1"></h2><p id="lessonGoal"></p><details class="lesson-reading"><summary>Read the principle</summary><p id="lessonPrinciple" class="notice"></p><ol id="lessonSteps" class="lesson-steps"></ol></details><div class="lesson-actions"><button id="btnWorkedExample" class="button">Try the idea</button><button id="btnGuidedPractice" class="button">Practice with cues</button><button id="btnLessonPractice" class="button primary">Test yourself</button></div><details class="lesson-reading"><summary>Reflect &amp; apply</summary><p id="lessonTransfer" class="muted"></p><label for="inputReflection" class="field-label">One cue I will look for</label><textarea id="inputReflection" rows="2" maxlength="500" placeholder="What did I miss, and what will I scan for next time?"></textarea><button id="btnSaveReflection" class="button">Save my reflection</button></details></article>
+      </div></section>
+
+      <section id="viewTrain" class="view hidden" aria-label="Training">
+        <div id="drillActiveContainer" class="focus-layout">
+          <div class="focus-header"><button id="btnExitTraining" class="icon-button" aria-label="Exit training">←</button><span id="lessonMode">Practice</span><span id="drillStepCounter">1 / 8</span><button id="btnOpenHelp" class="button small">Help</button></div>
+          <div id="lessonProgress" class="lesson-progress" aria-label="Session progress"></div>
+          <div id="focusBoardArea" class="focus-board-area">
+            <div id="mainBoardSurface"><div class="compact-board-tools"><span id="boardPerspective"></span></div><div class="board-frame"><div class="board-stage"><div id="chessboardGrid" class="board-grid" role="group" aria-label="Select your answer on the chessboard"></div><svg id="geometryOverlaySvg" class="overlay-svg hidden" viewBox="0 0 100 100" aria-hidden="true"></svg></div></div></div>
+            <div id="conceptSurface" class="hidden"><div class="board-frame"><div class="board-stage"><div id="conceptBoard" class="board-grid" role="group" aria-label="Visual understanding check"></div><svg id="conceptGeometry" class="overlay-svg" viewBox="0 0 100 100" aria-hidden="true"></svg></div></div></div>
+          </div>
+<aside class="interaction-panel" aria-label="Training context and actions"><section class="coach-narration" aria-label="Coach narration"><div class="coach-heading"><span class="coach-avatar" aria-hidden="true"><svg class="coach-portrait" viewBox="0 0 48 64"><path fill="#42632c" d="M2 64V53c0-13 10-19 22-19s22 6 22 19v11Z"/><path fill="#d9a474" d="M18 31h12v13c-4 4-8 4-12 0Z"/><ellipse fill="#f0c49b" cx="24" cy="23" rx="14" ry="18"/><path fill="#4b3930" d="M10 24C3 5 19-2 30 3c9 2 13 12 8 23l-2-12c-10 5-17 1-20-2l-4 14Z"/><circle cx="19" cy="24" r="1.2" fill="#39332e"/><circle cx="29" cy="24" r="1.2" fill="#39332e"/><path d="M20 31q4 4 8 0" fill="none" stroke="#985f4b" stroke-width="1.6" stroke-linecap="round"/></svg></span><div><strong>Vision Coach</strong><small>ON-DEVICE GUIDANCE</small></div><span class="coach-online" aria-hidden="true"></span></div><div class="coach-scroll" role="region" tabindex="0" aria-label="Current task and next step">          <div class="task-cue"><span id="taskChips" class="eyebrow"></span><h1 id="taskGoal" tabindex="-1">Find the connection</h1><span id="moveCue" class="move-cue"></span></div>
+<span id="draftStatus" role="status" aria-live="polite">Tap a target</span></div></section><div class="context-scroll" role="region" tabindex="0" aria-label="Exercise controls and feedback"><p id="conceptExplanation" class="mini-explanation hidden" role="status"></p>          <div class="training-status"><div id="flashTimerWrap" class="hidden"><div class="row"><strong id="flashStatusText" role="status">Look and remember</strong><button id="btnReflash" class="text-button">Look again</button></div><div class="timer-track"><div id="flashProgressBar" class="flash-progress-bar"></div></div></div><div id="flashInvalidBanner" class="notice hidden"><span>Exposure paused</span><button id="btnRestartInvalidFlash" class="button small">Restart</button></div><div id="verdictGroup" class="hidden grid grid-cols-2 gap-2" role="group" aria-label="Choose your verdict"><button id="btnVerdictReal" class="button">Yes · real</button><button id="btnVerdictIllusion" class="button">No · illusion</button></div></div>
+          <div class="focus-state"><div class="stage-steps" aria-label="Learning stages"><span id="stageSpot">1 · Spot</span><span aria-hidden="true">→</span><span id="stageUnderstand">2 · Understand</span></div><div id="focusFeedback" class="hidden" role="status"><strong id="resultBadge"></strong><p id="resultSummary"></p><div id="beforeAfterTabs" class="segmented hidden" role="group" aria-label="Compare positions"><button id="btnShowBefore">Before</button><button id="btnShowAfter">After</button></div></div><button id="btnReviewConnection" class="text-button hidden">Review connection</button><div class="draft-strip"><button id="btnUndoSelection" class="text-button hidden">Undo</button><button id="btnResetDraft" class="text-button hidden">Reset</button></div></div>
+</div>          <div class="action-dock"><button id="btnStartExposure" class="button primary hidden">Start</button><button id="btnCheckAnswer" class="button primary" disabled>Check</button><button id="btnContinueUnderstanding" class="button primary hidden">Understand →</button><button id="btnNextExercise" class="button primary hidden">Next position →</button></div>
+</aside>          <details id="trainingHelp" class="training-help"><summary class="sr-only">Exercise help</summary><div class="help-header"><h2>Need a cue?</h2><button id="btnCloseHelp" class="button small">Close</button></div><p id="fullTask"></p><button id="btnFlipBoard" class="button">⇄ Flip board</button><button id="btnDemoAgain" class="button">Show the gesture</button><button id="btnToggleHint" class="button">Show a hint</button><div id="hintBox" class="notice hidden"></div><p id="fullExplanation"></p><div id="geometryControls" class="geometry-controls" role="group" aria-label="Geometry layers"><button data-layer="attack" aria-pressed="true">Attack</button><button data-layer="defense" aria-pressed="true">Defense</button><button data-layer="structure" aria-pressed="true">Pin / block</button></div><ul id="connectionList" class="connection-list"></ul><div id="confidenceGroup" class="confidence-group"><span>Confidence · optional</span><div><button data-confidence="1">Not sure</button><button data-confidence="2">Think so</button><button data-confidence="3">Certain</button></div></div><p class="muted">Attack: a piece controls the target. Defense: a friendly piece protects it. Lines show geometry; they do not prove a capture wins.</p></details>
+          <div hidden aria-hidden="true"><span id="drillCategoryPill"></span><h2 id="drillTitle" tabindex="-1"></h2><p id="drillPrompt"></p><p id="drillSubPrompt"></p><span id="drillMovePill"></span><div id="answerGuide"><span id="answerAction"></span><p id="answerHow"></p><p id="traceChosen"></p><button id="btnResetTrace">Reset</button></div><div id="preAnswerBar"><span id="selectionHintLabel"></span></div><span id="boardStateLabel"></span><span id="boardStateDetail"></span><div id="flashMaskBanner"></div><button id="btnSubmitSet">Check selection</button><div id="feedbackPanel"><strong id="feedbackTitle" tabindex="-1"></strong><p id="feedbackExplanation"></p><button id="btnToggleBeforeAfter">Before</button><div id="understandingCheck"><h3 id="understandingQuestion"></h3><div id="understandingOptions"></div><p id="understandingResult"></p></div></div></div>
+        </div>
+        <article id="sprintSummaryCard" class="summary-card hidden flex-col gap-4"><span class="eyebrow">PRACTICE COMPLETE</span><h2 id="summaryHeading" tabindex="-1">A clearer view.</h2><p id="summaryEvidence" class="muted"></p><p id="summaryMessage"></p><div class="stats-strip"><div><strong id="summaryAccuracy">0%</strong><span>Accuracy</span></div><div><strong id="summarySpeed">0s</strong><span>Median correct</span></div></div><div id="summaryPatterns" class="summary-patterns"></div><button id="btnSprintAgain" class="button primary">Practice another set</button><button id="btnBackToToday" class="button">Back to Today</button></article>
+      </section>
+
+
+      <section id="viewGames" class="view hidden flex-col gap-4" aria-label="Your games"><div class="page-context" role="region" tabindex="0" aria-label="Games content">
+        <div class="page-heading"><div><span id="gamesCountTag" class="eyebrow">YOUR PERSONAL STUDY</span><h1 tabindex="-1">Your games.<br><em>Fresh eyes.</em></h1></div></div><p class="page-intro">Import a game. Train its connections. Entirely on this device.</p><div id="gamesStatusBanner" class="notice hidden" role="status"></div>
+        <article class="panel flex flex-col gap-3"><div class="section-heading"><h2>Bring a game</h2><span class="pill">Works offline</span></div><p class="muted">Paste a PGN or open a game file to find hanging pieces, pins and converging attacks.</p><div class="row gap-2 flex-wrap"><label class="button file-button" for="inputPgnFile">Open PGN file<input id="inputPgnFile" type="file" accept=".pgn,.txt" class="sr-only"></label><button id="btnLoadSamplePgn" class="text-button">Try a sample</button></div><label class="field-label" for="textareaPgn">Game notation (PGN)</label><textarea id="textareaPgn" rows="5" spellcheck="false" placeholder="1. e4 e5 2. Nf3 Nc6…"></textarea><button id="btnAnalyzePgn" class="button primary">Create vision drills <svg class="icon"><use href="#i-arrow"/></svg></button><div class="divider"></div><label class="field-label" for="inputSingleFen">Or study a single position (FEN)</label><div class="row gap-2"><input id="inputSingleFen" placeholder="Paste a FEN position" autocapitalize="off" spellcheck="false"><button id="btnDrillFen" class="button">Study</button></div><small class="muted">Standard PGN replay includes castling, en passant and promotion. Invalid games are skipped; a FEN snapshot is also supported.</small></article>
+        <details class="panel online-imports"><summary>Import public games <span class="muted">Optional · internet required</span></summary><p class="muted">Download from your public profile, then analyze locally.</p><label class="field-label" for="inputLichessUser">Lichess username</label><div class="row gap-2"><input id="inputLichessUser" placeholder="Lichess username" autocapitalize="off" spellcheck="false"><button id="btnImportLichess" class="button">Import</button></div><label class="field-label" for="inputChessComUser">Chess.com username</label><div class="row gap-2"><input id="inputChessComUser" placeholder="Chess.com username" autocapitalize="off" spellcheck="false"><button id="btnImportChessCom" class="button">Import</button></div><small class="muted">If a service is unavailable, paste a PGN or FEN above.</small></details>
+      </div></section>
+
+      <section id="viewProgress" class="view hidden flex-col gap-4" aria-label="Progress"><div class="page-context" role="region" tabindex="0" aria-label="Progress content">
+        <div class="page-heading"><div><span class="eyebrow">THE BIGGER PICTURE</span><h1 tabindex="-1">Your progress</h1></div></div><p class="page-intro">Your skills, growing on this device.</p><div id="progressOverview" class="progress-overview"></div><article class="panel"><h2>Your skill map</h2><div id="skillCoverage" class="skill-coverage"></div></article><p class="sr-only"></p><div class="stats-strip"><div><strong id="progTotalAttempts">0</strong><span>Positions</span></div><div><strong id="progAccuracy">—</strong><span>Accuracy</span></div><div><strong id="progTraps">0</strong><span>False positives</span></div></div>
+        <article class="panel"><div class="section-heading"><h2>Practice rhythm</h2><span>Last 7 days</span></div><div id="activityChart" class="activity-chart" aria-label="Positions practiced each day"></div><p id="progressInsight" class="muted"></p></article>
+        <article class="panel"><h2>Your calibration</h2><p id="calibrationProgress"></p><small>Recognition difficulty, not an Elo estimate. Beginner diagrams remain in Learn.</small></article><article class="panel"><h2>Transfer to your games</h2><p id="personalGameEvidence" class="muted"></p></article><article class="panel flex flex-col gap-3 progress-primary"><h2>Independent recognition</h2><p id="researchMetrics" class="muted"></p><details><summary>What this measures</summary><p class="muted">Assisted practice and assessment stay separate. App scores do not establish rating improvement.</p></details></article><article class="panel flex flex-col gap-3"><h2>Unfamiliar-position assessments</h2><div id="assessmentResults"></div><button id="btnAssessment" class="button">Start a fresh 12-position assessment</button><small class="muted">Fixed 5-second exposure, no hints or extra flashes. The assessment pool is never used in ordinary practice.</small></article><details class="panel"><summary>Six-week learning programme</summary><div id="sixWeekPlan" class="flex flex-col gap-2"></div><p class="muted">Accuracy first, then complexity, then speed. Dates are flexible: revisit weak relationships before moving on.</p></details>
+        <article class="panel flex flex-col gap-3"><h2>Evidence of understanding</h2><p id="learningEvidenceSummary"></p><p id="confidenceInsight" class="muted"></p><details><summary>How understanding is counted</summary><p>A correct target and visual check, without hints or extra flashes. Older written checks retain their original evidence.</p></details></article><article class="panel"><h2>Revisit missed connections</h2><ul id="learningErrorList" class="learning-notes"></ul></article><details class="panel"><summary>My reflection notebook</summary><ul id="reflectionList" class="learning-notes"></ul></details>
+        <div class="section-heading"><h2>Your pattern toolkit</h2><span>Independent accuracy</span></div><p id="progressEmpty" class="notice">Your first connection starts here. Complete a practice set to discover the patterns you see clearly and those worth revisiting.</p><div id="weaknessListContainer" class="skill-list flex flex-col gap-3"></div>
+        <details class="panel backup-panel"><summary>Your data &amp; backups</summary><p class="muted">Export a copy of your training history, or restore a previous backup.</p><div id="backupStatusBanner" class="notice hidden" role="status"></div><div class="grid grid-cols-2 gap-2"><button id="btnExportBackup" class="button primary">Export backup</button><label class="button file-button" for="inputRestoreFile">Restore file<input id="inputRestoreFile" class="sr-only" type="file" accept=".json,application/json"></label></div><div id="backupJsonDrawer" class="hidden flex-col gap-2"><label class="field-label" for="textareaBackupJson">Backup JSON</label><textarea id="textareaBackupJson" rows="6" spellcheck="false"></textarea><div class="row gap-2"><button id="btnCopyBackupJson" class="button">Copy JSON</button><button id="btnApplyPastedBackup" class="button">Restore JSON</button></div></div><div class="row gap-2 flex-wrap"><button id="btnTogglePasteBackup" class="text-button">Paste / view backup</button><button id="btnResetProgress" class="text-button danger">Reset history</button></div></details>
+<details class="panel"><summary>About, research &amp; licenses</summary><p class="muted">Chess Vision 1.4.0 · all learning runs on this device. The learning framework is research-informed; no rating improvement is promised. Source examples: Lichess Open Database, CC0. Rules: chess.js 1.4.0, BSD-2-Clause. Interface icons are original.</p><details><summary>Chess rules license</summary><pre class="license-text">Copyright (c) 2025, Jeff Hlywa (jhlywa@gmail.com)
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice,
+   this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+</pre></details></details>
+      </div></section>
+    </main>
+    <nav class="bottom-nav" aria-label="Primary navigation"><button id="navBtnToday" aria-current="page"><svg class="icon"><use href="#i-home"/></svg><span>Today</span></button><button id="navBtnLearn" aria-current="false"><svg class="icon"><use href="#i-book"/></svg><span>Learn</span></button><button hidden tabindex="-1" aria-hidden="true" id="navBtnTrain" aria-current="false"><svg class="icon"><use href="#i-target"/></svg><span>Practice</span></button><button id="navBtnGames" aria-current="false"><svg class="icon"><use href="#i-games"/></svg><span>Games</span></button><button id="navBtnProgress" aria-current="false"><svg class="icon"><use href="#i-progress"/></svg><span>Progress</span></button></nav>
+  </div>
+  <div id="liveAnnouncement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+  <section id="demoDialog" class="demo-dialog hidden" role="dialog" aria-modal="true" aria-labelledby="demoGoal"><div class="demo-shell"><div class="demo-header"><span class="eyebrow">QUICK TRY · NO SCORE</span><button id="demoSkip" class="text-button">Skip</button></div><h2 id="demoGoal">Try a tap</h2><p id="demoCue" role="status"></p><div id="demoVerdicts" class="grid grid-cols-2 gap-2 hidden"><button id="demoYes" class="button">Yes</button><button id="demoNo" class="button">No</button></div><div class="board-frame"><div class="board-stage"><div id="demoBoard" class="board-grid" role="group" aria-label="Separate practice demonstration"></div><svg id="demoGeometry" class="overlay-svg" viewBox="0 0 100 100" aria-hidden="true"></svg></div></div><div class="demo-actions"><button id="demoStart" class="button primary hidden">Show the board</button><button id="demoCheck" class="button primary" disabled>Check</button><button id="demoFinish" class="button primary hidden">Try it yourself →</button></div></div></section>
+
+  <section id="geometryWorkspace" class="geometry-workspace hidden" role="dialog" aria-modal="true" aria-labelledby="courseTitle">
+ <header class="course-header"><button id="btnCourseExit" class="icon-button" aria-label="Exit geometry course">←</button><h1 id="courseTitle" tabindex="-1"></h1><span id="courseCounter"></span></header>
+ <div class="course-coach"><span id="courseStage" class="eyebrow"></span><h2 id="courseGoal"></h2><p id="courseStatus" role="status" aria-live="polite"></p></div>
+ <div class="course-board-area"><div class="course-board-frame"><div id="courseBoard" class="course-board" role="group" aria-label="Course chessboard. Tap a piece then its destination in recall."></div><svg id="courseOverlay" viewBox="0 0 100 100" aria-hidden="true"></svg></div></div>
+ <aside class="course-context" aria-label="Course context"><h3 id="courseExampleTitle"></h3><p id="courseMoveLabel"></p><div id="courseCueBlock"><p id="courseCue"></p><button id="btnCourseControl" class="button" aria-pressed="false">Show selected piece’s control · dots</button><p id="courseInspection" class="muted"></p></div><details id="courseNotes"><summary>Original course notes</summary><p id="courseOriginalNote"></p></details><p class="muted">Personal PGN · GM Maurice Ashley. Recall checks the supplied line, not every possible good move.</p></aside>
+ <footer class="course-dock"><div class="course-progress-row"><span id="courseLineProgress"></span><progress id="courseProgress" value="0" max="1" aria-label="Course line progress"></progress></div><label id="coursePromotionLabel" class="hidden">Promote to <select id="coursePromotion" class="training-difficulty"><option value="q">Queen</option><option value="r">Rook</option><option value="b">Bishop</option><option value="n">Knight</option></select></label><div class="course-actions"><button id="btnCoursePrevious" class="button">Previous</button><button id="btnCourseReset" class="button">Reset</button><button id="btnCourseReveal" class="button">Show course move</button><button id="btnCourseRecall" class="button">Recall from the start</button><button id="btnCourseCheck" class="button primary">Check</button><button id="btnCourseNext" class="button primary">Next →</button></div></footer>
+</section>
+
+  <noscript><p class="notice">Enable JavaScript to use the offline chess trainer.</p></noscript>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,3458 @@
+[
+  {
+    "id": "starter-01-f7-convergence",
+    "original": "Tap the square where White's pieces converge with more attackers than defenders.",
+    "compact": "Find where White has more attackers than defenders",
+    "interaction": "single"
+  },
+  {
+    "id": "starter-02-hanging-bishop-c5",
+    "original": "Tap the undefended (hanging) enemy piece that is currently under attack.",
+    "compact": "Find the attacked, undefended enemy piece",
+    "interaction": "single"
+  },
+  {
+    "id": "starter-03-illusion-protected-g4",
+    "original": "Look at Black Bishop on g4: is it truly hanging, or is it defended from afar? Choose your verdict and tap g4 (or its defender).",
+    "compact": "Is the bishop on g4 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "starter-04-ruy-lopez-false-pin",
+    "original": "Is the piece on c6 truly pinned, or is it an illusion? Choose your verdict above, then tap c6 (or the second blocker).",
+    "compact": "Is the knight on c6 truly pinned?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "starter-05-steinitz-true-pin",
+    "original": "Tap the piece that is pinned along a rank, file, or diagonal.",
+    "compact": "Find the pinned piece",
+    "interaction": "single"
+  },
+  {
+    "id": "starter-06-true-knight-fork-c7",
+    "original": "Tap the square where the White Knight executes a clean royal & rook fork.",
+    "compact": "Find a safe knight fork of king and rook",
+    "interaction": "single"
+  },
+  {
+    "id": "starter-07-fake-knight-fork-c7",
+    "original": "Evaluate the knight jump to c7: is it a clean royal fork or a guarded trap? Select your verdict and tap c7 (or the guarding piece).",
+    "compact": "Is c7 a safe knight fork square?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "starter-08-blocked-long-diagonal",
+    "original": "Does the b2 Bishop have an open diagonal to g7, or is it blocked? Choose your verdict above and tap the blocker square.",
+    "compact": "Is b2–g7 open? Select the blocking square",
+    "interaction": "verdict"
+  },
+  {
+    "id": "starter-09-flash-f7-battery",
+    "original": "Remember the bishop’s pawn target. After the flash, tap that target.",
+    "compact": "Remember the bishop’s pawn target",
+    "interaction": "flash"
+  },
+  {
+    "id": "starter-10-flash-undefended-knight",
+    "original": "Remember the black knight’s location. After the flash, tap its square.",
+    "compact": "Remember the Black knight’s square",
+    "interaction": "flash"
+  },
+  {
+    "id": "starter-11-before-after-discovered-attack",
+    "original": "Visualize White playing Nxc5. Tap the square that becomes newly attacked or hanging.",
+    "compact": "After Nxc5, which target becomes attacked?",
+    "interaction": "before"
+  },
+  {
+    "id": "starter-12-before-after-defensive-retreat",
+    "original": "Visualize Black playing Bb6. Tap the square where the retreating piece lands safely.",
+    "compact": "After Bb6, where does the bishop land safely?",
+    "interaction": "before"
+  },
+  {
+    "id": "starter-13-relative-pin-bg5",
+    "original": "Tap the piece that is pinned along a rank, file, or diagonal.",
+    "compact": "Find the piece shielding its queen",
+    "interaction": "single"
+  },
+  {
+    "id": "starter-14-convergence-d5-outpost",
+    "original": "Tap the square where White's pieces converge with more attackers than defenders.",
+    "compact": "Find where White has more attackers than defenders",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-board-1",
+    "original": "Tap e4. Name its file and rank before you tap.",
+    "compact": "Find e4",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-board-2",
+    "original": "Which enemy piece lies on the b2 bishop’s diagonal?",
+    "compact": "Find the enemy piece on the b2 bishop’s diagonal",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-board-3",
+    "original": "Tap the black rook reachable by the d4 knight in one jump.",
+    "compact": "Which Black rook can the d4 knight reach?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-board-4",
+    "original": "Which piece first blocks the c1 bishop’s line toward h6?",
+    "compact": "Find the first blocker on c1–h6",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-pressure-1",
+    "original": "Find the black piece attacked by the rook with no defender.",
+    "compact": "Find the Black piece attacked by the rook with no defender",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-pressure-2",
+    "original": "Which black piece protects the bishop on g4?",
+    "compact": "Who defends the Black bishop on g4?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-pressure-3",
+    "original": "Which white pawn protects the knight on d4?",
+    "compact": "Which White pawn defends the knight on d4?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-pressure-4",
+    "original": "Where do the bishop and rook attacks converge?",
+    "compact": "Where do bishop and rook attacks meet?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-alignment-1",
+    "original": "Which black piece cannot leave the e-file without exposing its king?",
+    "compact": "Which Black piece is pinned to its king on the e-file?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-alignment-2",
+    "original": "Which black piece shields the queen from the g5 bishop?",
+    "compact": "Which piece shields the queen from the g5 bishop?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-alignment-3",
+    "original": "Tap the additional blocker that breaks an immediate pin of the e7 rook.",
+    "compact": "Find the extra blocker that breaks the e7 rook’s pin",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-alignment-4",
+    "original": "With the black king checked on the e-file, which valuable piece sits behind it?",
+    "compact": "Which valuable piece sits behind the checked Black king?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-forks-1",
+    "original": "Find the knight destination that would attack both e8 and a8.",
+    "compact": "Find a knight square attacking both e8 and a8",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-forks-2",
+    "original": "Which black piece guards the tempting c7 fork square?",
+    "compact": "Who guards the c7 fork square?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-forks-3",
+    "original": "Which white piece attacks both black minor pieces?",
+    "compact": "Which White piece attacks both Black minor pieces?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-forks-4",
+    "original": "Which white piece attacks both the rook on d8 and bishop on h4?",
+    "compact": "Who attacks both the d8 rook and h4 bishop?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-change-1",
+    "original": "Imagine the knight moving from e4 to c5. Which queen becomes attacked?",
+    "compact": "After Ne4–c5, which queen becomes attacked?",
+    "interaction": "before"
+  },
+  {
+    "id": "learn-change-2",
+    "original": "Imagine Nd4–e2. Which rook comes into the bishop’s view?",
+    "compact": "After Nd4–e2, which rook enters the bishop’s view?",
+    "interaction": "before"
+  },
+  {
+    "id": "learn-change-3",
+    "original": "Imagine the queen moving from d7 to d8. Which bishop loses its defender?",
+    "compact": "After Qd7–d8, which bishop loses its defender?",
+    "interaction": "before"
+  },
+  {
+    "id": "learn-change-4",
+    "original": "Imagine the black rook moving d6–d4. Tap the square where it blocks the diagonal.",
+    "compact": "After Rd6–d4, where does the rook block the diagonal?",
+    "interaction": "before"
+  },
+  {
+    "id": "learn-helpers-1",
+    "original": "Which black rook protects the knight on d5?",
+    "compact": "Which Black rook protects the knight on d5?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-helpers-2",
+    "original": "Which black piece defends both b5 and e2?",
+    "compact": "Who defends both b5 and e2?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-helpers-3",
+    "original": "Tap d5, a square between the rook and the knight where an interposition could interrupt their connection.",
+    "compact": "Find d5, the interposition square",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-helpers-4",
+    "original": "Which black knight is the defender to examine before attacking the queen on d5?",
+    "compact": "Which Black knight defends the queen on d5?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-king-1",
+    "original": "Tap the king whose own pawn wall restricts escape from a rook’s rank check.",
+    "compact": "Which checked king is trapped by its own pawns?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-king-2",
+    "original": "Which empty square has the h-pawn move opened next to the black king?",
+    "compact": "Which square beside the Black king did the h-pawn open?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-king-3",
+    "original": "Which white queen is supported along the b2 bishop’s diagonal?",
+    "compact": "Which White queen is supported by the b2 bishop?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-king-4",
+    "original": "Which square adjacent to g8 is controlled by the c4 bishop?",
+    "compact": "Which square beside g8 does the c4 bishop control?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-memory-1",
+    "original": "Memorize the rook and its target. After the flash, tap the black queen’s square.",
+    "compact": "Remember the Black queen’s square",
+    "interaction": "flash"
+  },
+  {
+    "id": "learn-memory-2",
+    "original": "Remember the bishop’s diagonal target. Tap that target after the pieces hide.",
+    "compact": "Remember the bishop’s diagonal target",
+    "interaction": "flash"
+  },
+  {
+    "id": "learn-memory-3",
+    "original": "Remember who guards the attacked bishop. After the flash, tap its defender’s square.",
+    "compact": "Remember the attacked bishop’s defender",
+    "interaction": "flash"
+  },
+  {
+    "id": "learn-memory-4",
+    "original": "Remember the knight’s queen target. After the flash, tap that square.",
+    "compact": "Remember the knight’s queen target",
+    "interaction": "flash"
+  },
+  {
+    "id": "learn-pawns-1",
+    "original": "Which white pawn has no friendly pawn on either adjacent file?",
+    "compact": "Find the isolated White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-pawns-2",
+    "original": "Tap the advanced pawn in White’s doubled c-pawns.",
+    "compact": "Find the advanced pawn in White’s doubled c-pawns",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-pawns-3",
+    "original": "Which white pawn has no enemy pawn ahead on its own or an adjacent file?",
+    "compact": "Find the passed White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-pawns-4",
+    "original": "Which enemy pawn is in contact with White’s e4 pawn?",
+    "compact": "Which enemy pawn touches White’s e4 pawn?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-positional-1",
+    "original": "Which white rook occupies a file containing no pawns?",
+    "compact": "Which White rook has a pawn-free file?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-positional-2",
+    "original": "Which knight is pawn-supported and cannot be challenged by an enemy pawn?",
+    "compact": "Find the pawn-supported knight safe from enemy pawn attacks",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-positional-3",
+    "original": "Tap the black pawn on the same color complex and diagonal as the c1 bishop.",
+    "compact": "Find the Black pawn on the c1 bishop’s diagonal",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-positional-4",
+    "original": "Tap c7, the seventh-rank entry square on the rook’s open file.",
+    "compact": "Find c7, the rook’s seventh-rank entry square",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-endgames-1",
+    "original": "Tap the empty square separating the two kings. Black to move.",
+    "compact": "Black to move: find the square between the kings",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-endgames-2",
+    "original": "Which square must the white c6 pawn reach to promote?",
+    "compact": "Where must the c6 pawn reach to promote?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-endgames-3",
+    "original": "Tap f8, the far upper corner of the c5 pawn’s promotion square.",
+    "compact": "Find f8, the far corner of the pawn’s promotion square",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-endgames-4",
+    "original": "Which forward square of the white pawn is controlled by its king?",
+    "compact": "Which forward pawn square does the White king control?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-routine-1",
+    "original": "Before choosing your own attack, which white pawn is under pressure from the rook?",
+    "compact": "Which White pawn is pressured by the rook?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-routine-2",
+    "original": "Find the rook destination that would check the black king along the h-file.",
+    "compact": "Find a rook move checking the king on the h-file",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-routine-3",
+    "original": "Tap the undefended checking piece the black king can capture.",
+    "compact": "Which checking piece can the Black king capture?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-routine-4",
+    "original": "Before committing to another plan, which white piece is attacked by the b5 pawn?",
+    "compact": "Which White piece does the b5 pawn attack?",
+    "interaction": "single"
+  },
+  {
+    "id": "learn-pressure-contrast-loose-true",
+    "original": "Is the attacked knight on a5 undefended? Choose a verdict, then tap the target.",
+    "compact": "Is the attacked knight on a5 undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-pressure-contrast-loose-false",
+    "original": "Is the attacked knight on a5 undefended? Choose a verdict, then tap the target.",
+    "compact": "Is the attacked knight on a5 undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-board-contrast-bishop-line-true",
+    "original": "Does the bishop directly attack the queen? Choose a verdict, then tap the target.",
+    "compact": "Does the bishop directly attack the queen?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-board-contrast-bishop-line-false",
+    "original": "Does the bishop directly attack the queen? Choose a verdict, then tap the target.",
+    "compact": "Does the bishop directly attack the queen?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-board-contrast-rook-line-true",
+    "original": "Does the rook directly attack the queen? Choose a verdict, then tap the target.",
+    "compact": "Does the rook directly attack the queen?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-board-contrast-rook-line-false",
+    "original": "Does the rook directly attack the queen? Choose a verdict, then tap the target.",
+    "compact": "Does the rook directly attack the queen?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-board-contrast-knight-true",
+    "original": "Does the white knight attack the rook on f5? Choose a verdict, then tap the target.",
+    "compact": "Does the white knight attack the rook on f5?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-board-contrast-knight-false",
+    "original": "Does the white knight attack the rook on f5? Choose a verdict, then tap the target.",
+    "compact": "Does the white knight attack the rook on f5?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-alignment-contrast-pin-true",
+    "original": "Is the black rook absolutely pinned to its king by the white rook? Choose a verdict, then tap the target.",
+    "compact": "Is the black rook absolutely pinned to its king by the white rook?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-alignment-contrast-pin-false",
+    "original": "Is the black rook absolutely pinned to its king by the white rook? Choose a verdict, then tap the target.",
+    "compact": "Is the black rook absolutely pinned to its king by the white rook?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-forks-contrast-fork-true",
+    "original": "After Nc7, is the knight’s landing square free of black defenders? Choose a verdict, then tap the target.",
+    "compact": "After Nc7, is the knight’s landing square free of black defenders?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-forks-contrast-fork-false",
+    "original": "After Nc7, is the knight’s landing square free of black defenders? Choose a verdict, then tap the target.",
+    "compact": "After Nc7, is the knight’s landing square free of black defenders?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-change-contrast-discovery-true",
+    "original": "After Nc5, will the rook directly attack the queen on e7? Choose a verdict, then tap the target.",
+    "compact": "After Nc5, will the rook directly attack the queen on e7?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-change-contrast-discovery-false",
+    "original": "After Nc5, will the rook directly attack the queen on e7? Choose a verdict, then tap the target.",
+    "compact": "After Nc5, will the rook directly attack the queen on e7?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-pressure-contrast-pawn-support-true",
+    "original": "Does the white pawn protect the knight? Choose a verdict, then tap the target.",
+    "compact": "Does the white pawn protect the knight?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-pressure-contrast-pawn-support-false",
+    "original": "Does the white pawn protect the knight? Choose a verdict, then tap the target.",
+    "compact": "Does the white pawn protect the knight?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-king-contrast-king-space-true",
+    "original": "Does the white bishop control the king’s adjacent square f7? Choose a verdict, then tap the target.",
+    "compact": "Does the white bishop control the king’s adjacent square f7?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-king-contrast-king-space-false",
+    "original": "Does the white bishop control the king’s adjacent square f7? Choose a verdict, then tap the target.",
+    "compact": "Does the white bishop control the king’s adjacent square f7?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-positional-contrast-outpost-true",
+    "original": "Is the knight on d5 supported by the white pawn? Choose a verdict, then tap the target.",
+    "compact": "Is the knight on d5 supported by the white pawn?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-positional-contrast-outpost-false",
+    "original": "Is the knight on d5 supported by the white pawn? Choose a verdict, then tap the target.",
+    "compact": "Is the knight on d5 supported by the white pawn?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-helpers-contrast-overload-true",
+    "original": "Does the queen directly defend both the rook on b5 and bishop on e2? Choose a verdict, then tap the target.",
+    "compact": "Does the queen directly defend both the rook on b5 and bishop on e2?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-helpers-contrast-overload-false",
+    "original": "Does the queen directly defend both the rook on b5 and bishop on e2? Choose a verdict, then tap the target.",
+    "compact": "Does the queen directly defend both the rook on b5 and bishop on e2?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-pawns-contrast-passed-true",
+    "original": "Is White’s e5 pawn a passed pawn? Choose a verdict, then tap the target.",
+    "compact": "Is White’s e5 pawn a passed pawn?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-pawns-contrast-passed-false",
+    "original": "Is White’s e5 pawn a passed pawn? Choose a verdict, then tap the target.",
+    "compact": "Is White’s e5 pawn a passed pawn?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-endgames-contrast-opposition-true",
+    "original": "Are the kings facing each other in direct opposition along a file? Choose a verdict, then tap the target.",
+    "compact": "Are the kings facing each other in direct opposition along a file?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-endgames-contrast-opposition-false",
+    "original": "Are the kings facing each other in direct opposition along a file? Choose a verdict, then tap the target.",
+    "compact": "Are the kings facing each other in direct opposition along a file?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-routine-contrast-reply-true",
+    "original": "Can the black king legally capture the rook on h7? Choose a verdict, then tap the target.",
+    "compact": "Can the black king legally capture the rook on h7?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-routine-contrast-reply-false",
+    "original": "Can the black king legally capture the rook on h7? Choose a verdict, then tap the target.",
+    "compact": "Can the black king legally capture the rook on h7?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "learn-pressure-set-1",
+    "original": "Select every white piece attacking the black queen, then check your selection.",
+    "compact": "Select every White attacker of the Black queen",
+    "interaction": "multi"
+  },
+  {
+    "id": "learn-pressure-set-2",
+    "original": "Select every black piece defending the bishop on g4.",
+    "compact": "Select every Black defender of the bishop on g4",
+    "interaction": "multi"
+  },
+  {
+    "id": "learn-pressure-set-3",
+    "original": "Select all attacked, undefended black pieces.",
+    "compact": "Select all attacked, undefended Black pieces",
+    "interaction": "multi"
+  },
+  {
+    "id": "learn-king-set-4",
+    "original": "Among the black king’s adjacent squares, select every square controlled by White.",
+    "compact": "Select every White-controlled square next to the Black king",
+    "interaction": "multi"
+  },
+  {
+    "id": "learn-board-set-5",
+    "original": "Select every square the d4 knight can reach in one move.",
+    "compact": "Select every square the d4 knight can reach",
+    "interaction": "multi"
+  },
+  {
+    "id": "learn-board-set-6",
+    "original": "Select the white pawns blocking the bishop’s line to h6 and the rook’s file toward a8.",
+    "compact": "Select the White pawns blocking c1–h6 and the a-file",
+    "interaction": "multi"
+  },
+  {
+    "id": "game-00008",
+    "original": "Find the attacked, undefended Black bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended Black bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-0000D",
+    "original": "Is White queen on d6 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White queen on d6 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-0008Q",
+    "original": "Visualize Rf7. Find the White rook whose attack or defense connections change.",
+    "compact": "After Rf7, whose connections change? White rook",
+    "interaction": "before"
+  },
+  {
+    "id": "game-0009B",
+    "original": "Remember the attacked defended Black knight. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended Black knight",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-000Pw",
+    "original": "Find the attacked, defended Black knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-000VW",
+    "original": "Is White rook on d1 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White rook on d1 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-000Vc",
+    "original": "Trace the connection around Black pawn on d5. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black pawn on d5",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-000aY",
+    "original": "Remember the attacked undefended White bishop. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended White bishop",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-000c8",
+    "original": "Find the attacked, defended Black knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-000hf",
+    "original": "Is Black pawn on e6 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on e6 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-000jr",
+    "original": "Trace the connection around Black knight on g6. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black knight on g6",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-000lC",
+    "original": "Visualize Rxd6+. Find the White knight whose attack or defense connections change.",
+    "compact": "After Rxd6+, whose connections change? White knight",
+    "interaction": "before"
+  },
+  {
+    "id": "game-000mr",
+    "original": "Remember the attacked defended White queen. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White queen",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-000rO",
+    "original": "Is Black pawn on d2 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on d2 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-000rZ",
+    "original": "Trace the connection around White bishop on e3. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White bishop on e3",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-0017R",
+    "original": "Visualize Nexc4. Find the Black pawn whose attack or defense connections change.",
+    "compact": "After Nexc4, whose connections change? Black pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-0018P",
+    "original": "Remember the attacked defended White pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-001Hi",
+    "original": "Find the attacked, defended Black queen. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black queen",
+    "interaction": "single"
+  },
+  {
+    "id": "game-001KR",
+    "original": "Is White pawn on a2 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White pawn on a2 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-001Oo",
+    "original": "Trace the connection around Black queen on a4. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black queen on a4",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-001Wz",
+    "original": "Visualize Rxe5. Find the White pawn whose attack or defense connections change.",
+    "compact": "After Rxe5, whose connections change? White pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-001aK",
+    "original": "Find the attacked, undefended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-001cr",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-001gi",
+    "original": "Is White knight on a8 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White knight on a8 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-001h8",
+    "original": "Trace the connection around Black pawn on h7. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black pawn on h7",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-001kG",
+    "original": "Visualize Bc5. Find the Black knight whose attack or defense connections change.",
+    "compact": "After Bc5, whose connections change? Black knight",
+    "interaction": "before"
+  },
+  {
+    "id": "game-001pC",
+    "original": "Find the attacked, undefended Black knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended Black knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-001u3",
+    "original": "Is White pawn on e3 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White pawn on e3 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-001uD",
+    "original": "Trace the connection around Black pawn on e5. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black pawn on e5",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-001w5",
+    "original": "Visualize Rf7. Find the White pawn whose attack or defense connections change.",
+    "compact": "After Rf7, whose connections change? White pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-001wR",
+    "original": "Remember the attacked undefended White pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended White pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-001wb",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-001wr",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-001xO",
+    "original": "Is White knight on c5 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White knight on c5 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-001xl",
+    "original": "Find the attacked, undefended White rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-002GQ",
+    "original": "Remember the attacked undefended Black knight. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black knight",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-002Hv",
+    "original": "Find the attacked, undefended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-002LF",
+    "original": "Visualize Qxg4. Find the White knight whose attack or defense connections change.",
+    "compact": "After Qxg4, whose connections change? White knight",
+    "interaction": "before"
+  },
+  {
+    "id": "game-002LW",
+    "original": "Remember the attacked defended White rook. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White rook",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-002Mm",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-002Tf",
+    "original": "Trace the connection around White pawn on e5. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on e5",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-002Ua",
+    "original": "Visualize Kh1. Find the White pawn whose attack or defense connections change.",
+    "compact": "After Kh1, whose connections change? White pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-002Uy",
+    "original": "Remember the attacked defended White rook. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White rook",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-002VP",
+    "original": "Find the attacked, defended Black knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-002X3",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-002Z9",
+    "original": "Is Black rook on e8 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black rook on e8 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-002e5",
+    "original": "Visualize Kg8. Find the Black pawn whose attack or defense connections change.",
+    "compact": "After Kg8, whose connections change? Black pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-002mG",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-002p5",
+    "original": "Find the attacked, undefended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-002uV",
+    "original": "Trace the connection around Black knight on c6. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black knight on c6",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-002vV",
+    "original": "Visualize Rb6. Find the Black pawn whose attack or defense connections change.",
+    "compact": "After Rb6, whose connections change? Black pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-002xh",
+    "original": "Remember the attacked undefended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-0030b",
+    "original": "Find the attacked, defended Black rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00347",
+    "original": "Find the attacked, undefended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-0039T",
+    "original": "Is Black pawn on a7 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on a7 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-003AX",
+    "original": "Trace the connection around Black rook on c8. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black rook on c8",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-003Ec",
+    "original": "Visualize Qf5. Find the Black queen whose attack or defense connections change.",
+    "compact": "After Qf5, whose connections change? Black queen",
+    "interaction": "before"
+  },
+  {
+    "id": "game-003IM",
+    "original": "Remember the attacked defended White queen. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White queen",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-003IX",
+    "original": "Find the attacked, defended Black rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-003Jb",
+    "original": "Find the attacked, undefended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-003S3",
+    "original": "Is White knight on b7 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White knight on b7 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-003YF",
+    "original": "Visualize Bxf4. Find the White bishop whose attack or defense connections change.",
+    "compact": "After Bxf4, whose connections change? White bishop",
+    "interaction": "before"
+  },
+  {
+    "id": "game-003cs",
+    "original": "Find the attacked, defended Black bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-003eP",
+    "original": "Find the attacked, undefended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-003jb",
+    "original": "Trace the connection around White queen on d4. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White queen on d4",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-003jv",
+    "original": "Visualize Rh8. Find the Black pawn whose attack or defense connections change.",
+    "compact": "After Rh8, whose connections change? Black pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-003md",
+    "original": "Remember the attacked undefended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-003mh",
+    "original": "Find the attacked, defended Black rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-003nQ",
+    "original": "Find the attacked, defended White knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-003o0",
+    "original": "Is Black knight on d7 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black knight on d7 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-003r5",
+    "original": "Trace the connection around White pawn on a2. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on a2",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-003wQ",
+    "original": "Visualize Rxf1. Find the White bishop whose attack or defense connections change.",
+    "compact": "After Rxf1, whose connections change? White bishop",
+    "interaction": "before"
+  },
+  {
+    "id": "game-0040n",
+    "original": "Remember the attacked defended Black knight. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended Black knight",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-0042j",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00465",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-0047P",
+    "original": "Is Black pawn on a3 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on a3 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-0048h",
+    "original": "Trace the connection around White pawn on g4. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on g4",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-0048r",
+    "original": "Visualize Qb5. Find the White pawn whose attack or defense connections change.",
+    "compact": "After Qb5, whose connections change? White pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-0048x",
+    "original": "Remember the attacked undefended Black bishop. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black bishop",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-004Ao",
+    "original": "Find the attacked, defended Black queen. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black queen",
+    "interaction": "single"
+  },
+  {
+    "id": "game-004Ax",
+    "original": "Find the attacked, undefended White rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-004BW",
+    "original": "Is Black pawn on h7 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on h7 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-004Lu",
+    "original": "Visualize Ke7. Find the White pawn whose attack or defense connections change.",
+    "compact": "After Ke7, whose connections change? White pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-004M1",
+    "original": "Remember the attacked defended White bishop. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White bishop",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-004Op",
+    "original": "Find the attacked, undefended Black knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended Black knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-004RF",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-004Ud",
+    "original": "Is Black pawn on b5 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on b5 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-004WZ",
+    "original": "Trace the connection around White pawn on a4. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on a4",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-004X6",
+    "original": "Visualize Rxb1. Find the Black rook whose attack or defense connections change.",
+    "compact": "After Rxb1, whose connections change? Black rook",
+    "interaction": "before"
+  },
+  {
+    "id": "game-004Ys",
+    "original": "Find the attacked, undefended White bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-004b0",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-004kB",
+    "original": "Visualize Qxc7. Find the Black knight whose attack or defense connections change.",
+    "compact": "After Qxc7, whose connections change? Black knight",
+    "interaction": "before"
+  },
+  {
+    "id": "game-004mT",
+    "original": "Remember the attacked defended White pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-004nd",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-004sg",
+    "original": "Find the attacked, undefended White queen. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White queen",
+    "interaction": "single"
+  },
+  {
+    "id": "game-004yJ",
+    "original": "Is White pawn on g2 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White pawn on g2 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-0050w",
+    "original": "Remember the attacked defended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-0054a",
+    "original": "Find the attacked, defended Black bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-0055Y",
+    "original": "Find the attacked, undefended Black rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended Black rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-005Bm",
+    "original": "Is Black pawn on b4 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on b4 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-005Ep",
+    "original": "Trace the connection around White pawn on b2. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on b2",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-005N7",
+    "original": "Remember the attacked undefended Black knight. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black knight",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-005YX",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-005gP",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-005jJ",
+    "original": "Remember the attacked undefended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-005qG",
+    "original": "Is Black pawn on f4 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on f4 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-005wJ",
+    "original": "Trace the connection around Black pawn on b7. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black pawn on b7",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-005ws",
+    "original": "Visualize Ke6. Find the Black pawn whose attack or defense connections change.",
+    "compact": "After Ke6, whose connections change? Black pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-005x9",
+    "original": "Find the attacked, defended Black bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-005xu",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-0061g",
+    "original": "Trace the connection around White knight on f1. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White knight on f1",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00656",
+    "original": "Visualize hxg4. Find the Black pawn whose attack or defense connections change.",
+    "compact": "After hxg4, whose connections change? Black pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-0068B",
+    "original": "Remember the attacked undefended White bishop. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended White bishop",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-006E1",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-006GK",
+    "original": "Is White pawn on b2 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White pawn on b2 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-006HV",
+    "original": "Trace the connection around White pawn on c3. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on c3",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-006RM",
+    "original": "Remember the attacked defended Black knight. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended Black knight",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-006XF",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-006cZ",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-006i7",
+    "original": "Trace the connection around White pawn on h3. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on h3",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-006ia",
+    "original": "Visualize Bxh6. Find the Black bishop whose attack or defense connections change.",
+    "compact": "After Bxh6, whose connections change? Black bishop",
+    "interaction": "before"
+  },
+  {
+    "id": "game-006of",
+    "original": "Remember the attacked defended Black rook. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended Black rook",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-006om",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-006pe",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-006wz",
+    "original": "Is Black bishop on b2 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black bishop on b2 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-006yP",
+    "original": "Find the attacked, undefended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-0071K",
+    "original": "Visualize Ra7+. Find the White rook whose attack or defense connections change.",
+    "compact": "After Ra7+, whose connections change? White rook",
+    "interaction": "before"
+  },
+  {
+    "id": "game-0071N",
+    "original": "Remember the attacked defended White rook. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White rook",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-0072T",
+    "original": "Find the attacked, defended White knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00734",
+    "original": "Find the attacked, defended Black knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00761",
+    "original": "Is White pawn on c3 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White pawn on c3 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-0078T",
+    "original": "Trace the connection around Black bishop on b7. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black bishop on b7",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00798",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-007AH",
+    "original": "Remember the attacked defended White knight. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White knight",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-007OE",
+    "original": "Is White rook on d1 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White rook on d1 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-007QU",
+    "original": "Trace the connection around White bishop on e5. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White bishop on e5",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-007Rn",
+    "original": "Visualize Bxg5. Find the Black knight whose attack or defense connections change.",
+    "compact": "After Bxg5, whose connections change? Black knight",
+    "interaction": "before"
+  },
+  {
+    "id": "game-007XE",
+    "original": "Remember the attacked undefended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-007bH",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-007c6",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-007eS",
+    "original": "Is White bishop on e4 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White bishop on e4 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-007fJ",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-007gO",
+    "original": "Remember the attacked defended White rook. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White rook",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-007hv",
+    "original": "Find the attacked, defended White knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-007ku",
+    "original": "Find the attacked, undefended White bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-007mr",
+    "original": "Is White rook on e4 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White rook on e4 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-007tv",
+    "original": "Trace the connection around Black pawn on f7. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black pawn on f7",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-0082f",
+    "original": "Visualize axb3. Find the Black pawn whose attack or defense connections change.",
+    "compact": "After axb3, whose connections change? Black pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-0088O",
+    "original": "Remember the attacked defended Black rook. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended Black rook",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-008D5",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-008EC",
+    "original": "Find the attacked, defended Black bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-008GK",
+    "original": "Is Black pawn on g7 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on g7 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-008LT",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-008Nz",
+    "original": "Remember the attacked undefended Black rook. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black rook",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-008Sk",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-008Y3",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-008aL",
+    "original": "Is Black pawn on e4 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on e4 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-008cl",
+    "original": "Trace the connection around White knight on d4. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White knight on d4",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-008lc",
+    "original": "Visualize Rg7. Find the Black rook whose attack or defense connections change.",
+    "compact": "After Rg7, whose connections change? Black rook",
+    "interaction": "before"
+  },
+  {
+    "id": "game-008nF",
+    "original": "Remember the attacked defended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-008oX",
+    "original": "Find the attacked, undefended White knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-008qL",
+    "original": "Is Black pawn on c5 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on c5 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-008rw",
+    "original": "Trace the connection around White knight on c3. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White knight on c3",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-008tL",
+    "original": "Visualize Rxa6. Find the Black pawn whose attack or defense connections change.",
+    "compact": "After Rxa6, whose connections change? Black pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-0091A",
+    "original": "Remember the attacked defended White knight. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White knight",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-0095W",
+    "original": "Is White pawn on a2 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White pawn on a2 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-009BH",
+    "original": "Trace the connection around White pawn on e3. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on e3",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-009FS",
+    "original": "Visualize Nxe6. Find the Black queen whose attack or defense connections change.",
+    "compact": "After Nxe6, whose connections change? Black queen",
+    "interaction": "before"
+  },
+  {
+    "id": "game-009IO",
+    "original": "Remember the attacked defended White knight. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White knight",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-009J1",
+    "original": "Find the attacked, defended White knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-009L0",
+    "original": "Find the attacked, undefended Black rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended Black rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-009Os",
+    "original": "Is Black rook on h4 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black rook on h4 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-009XT",
+    "original": "Remember the attacked undefended Black rook. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black rook",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-009YT",
+    "original": "Find the attacked, defended White rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-009bn",
+    "original": "Is Black rook on d8 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black rook on d8 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-009f8",
+    "original": "Visualize Kf5. Find the Black pawn whose attack or defense connections change.",
+    "compact": "After Kf5, whose connections change? Black pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-009lk",
+    "original": "Find the attacked, defended White bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-009oc",
+    "original": "Is Black knight on g7 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black knight on g7 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-009tE",
+    "original": "Trace the connection around White pawn on c2. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on c2",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-009wR",
+    "original": "Visualize Kh1. Find the White pawn whose attack or defense connections change.",
+    "compact": "After Kh1, whose connections change? White pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-009zS",
+    "original": "Find the attacked, defended White bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00A5m",
+    "original": "Is White bishop on d3 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White bishop on d3 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00A5v",
+    "original": "Trace the connection around Black rook on e7. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black rook on e7",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00A8H",
+    "original": "Visualize Be5. Find the Black bishop whose attack or defense connections change.",
+    "compact": "After Be5, whose connections change? Black bishop",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00A9Q",
+    "original": "Remember the attacked defended White pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00AEM",
+    "original": "Find the attacked, undefended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00AFG",
+    "original": "Is White knight on f5 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White knight on f5 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00AGs",
+    "original": "Trace the connection around White knight on e2. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White knight on e2",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00AHY",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00AOH",
+    "original": "Remember the attacked undefended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00APl",
+    "original": "Find the attacked, defended Black rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00AVR",
+    "original": "Find the attacked, defended White knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00AXb",
+    "original": "Is Black rook on g1 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black rook on g1 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00AbP",
+    "original": "Remember the attacked defended White knight. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White knight",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00Ac7",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Af3",
+    "original": "Trace the connection around White pawn on g4. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on g4",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00AfZ",
+    "original": "Visualize Qxh8. Find the White knight whose attack or defense connections change.",
+    "compact": "After Qxh8, whose connections change? White knight",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00Ahb",
+    "original": "Find the attacked, defended Black knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Al5",
+    "original": "Find the attacked, undefended White bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00AoZ",
+    "original": "Is White pawn on c4 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White pawn on c4 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00Aok",
+    "original": "Trace the connection around Black rook on f8. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black rook on f8",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00Aq4",
+    "original": "Visualize Bxd5. Find the White pawn whose attack or defense connections change.",
+    "compact": "After Bxd5, whose connections change? White pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00Ar2",
+    "original": "Remember the attacked defended White knight. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White knight",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00Au2",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00AuR",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Aul",
+    "original": "Is White pawn on h2 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White pawn on h2 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00B2k",
+    "original": "Trace the connection around White pawn on f2. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on f2",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00B3B",
+    "original": "Visualize d8=Q+. Find the Black bishop whose attack or defense connections change.",
+    "compact": "After d8=Q+, whose connections change? Black bishop",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00B7G",
+    "original": "Remember the attacked defended White knight. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White knight",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00B8m",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00BCa",
+    "original": "Find the attacked, undefended White knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00BJm",
+    "original": "Is White knight on c6 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White knight on c6 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00BNd",
+    "original": "Remember the attacked defended White knight. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White knight",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00BPh",
+    "original": "Find the attacked, defended Black bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00BQD",
+    "original": "Find the attacked, defended White rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00BSo",
+    "original": "Is Black pawn on g7 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on g7 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00BZ6",
+    "original": "Trace the connection around White knight on c5. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White knight on c5",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00Bex",
+    "original": "Visualize Be6. Find the Black pawn whose attack or defense connections change.",
+    "compact": "After Be6, whose connections change? Black pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00Bg4",
+    "original": "Find the attacked, defended White rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Bm8",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Bn0",
+    "original": "Is White bishop on f4 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White bishop on f4 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00Bn4",
+    "original": "Find the attacked, undefended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00BnG",
+    "original": "Find the attacked, defended Black rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Bot",
+    "original": "Remember the attacked undefended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00Bp0",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00BrZ",
+    "original": "Find the attacked, defended Black bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Bse",
+    "original": "Is White pawn on g3 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White pawn on g3 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00Bul",
+    "original": "Trace the connection around White pawn on d2. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on d2",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00C3O",
+    "original": "Visualize Qe2. Find the White bishop whose attack or defense connections change.",
+    "compact": "After Qe2, whose connections change? White bishop",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00C7m",
+    "original": "Remember the attacked defended White pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00C8e",
+    "original": "Find the attacked, undefended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00CBU",
+    "original": "Is White pawn on a2 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White pawn on a2 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00CFp",
+    "original": "Find the attacked, undefended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00CMj",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00CNA",
+    "original": "Remember the attacked defended White knight. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White knight",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00CWE",
+    "original": "Find the attacked, defended White bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00CXr",
+    "original": "Find the attacked, undefended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00CYP",
+    "original": "Is Black rook on d8 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black rook on d8 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00Cfq",
+    "original": "Remember the attacked undefended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00Cqg",
+    "original": "Is Black pawn on a7 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on a7 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00Cs4",
+    "original": "Trace the connection around White knight on e5. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White knight on e5",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00CtS",
+    "original": "Remember the attacked undefended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00Cwz",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00D12",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00D77",
+    "original": "Is White knight on e4 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White knight on e4 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00DBP",
+    "original": "Visualize Rg8. Find the Black rook whose attack or defense connections change.",
+    "compact": "After Rg8, whose connections change? Black rook",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00DBg",
+    "original": "Remember the attacked undefended White pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended White pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00DEc",
+    "original": "Find the attacked, defended Black knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00DII",
+    "original": "Find the attacked, defended White queen. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White queen",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00DKr",
+    "original": "Is Black pawn on c7 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on c7 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00DPI",
+    "original": "Trace the connection around White knight on d5. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White knight on d5",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00DPQ",
+    "original": "Visualize Rh2. Find the Black rook whose attack or defense connections change.",
+    "compact": "After Rh2, whose connections change? Black rook",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00DU5",
+    "original": "Remember the attacked defended White pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00DUp",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00DYf",
+    "original": "Is Black rook on c5 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black rook on c5 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00DcC",
+    "original": "Trace the connection around Black pawn on a4. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black pawn on a4",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00DdW",
+    "original": "Visualize Ba3. Find the Black bishop whose attack or defense connections change.",
+    "compact": "After Ba3, whose connections change? Black bishop",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00DkJ",
+    "original": "Remember the attacked defended White pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00Dt6",
+    "original": "Is Black knight on f5 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black knight on f5 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00Dxh",
+    "original": "Trace the connection around White pawn on h3. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on h3",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00DzI",
+    "original": "Visualize Kxc5. Find the Black pawn whose attack or defense connections change.",
+    "compact": "After Kxc5, whose connections change? Black pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00E4Z",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00EDa",
+    "original": "Is White knight on b5 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White knight on b5 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00EEp",
+    "original": "Trace the connection around White rook on f1. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White rook on f1",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00EJb",
+    "original": "Visualize Kg2. Find the White queen whose attack or defense connections change.",
+    "compact": "After Kg2, whose connections change? White queen",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00ERL",
+    "original": "Remember the attacked undefended Black bishop. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black bishop",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00EUB",
+    "original": "Find the attacked, defended White knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00EUu",
+    "original": "Find the attacked, undefended Black rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended Black rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00EXM",
+    "original": "Is White pawn on b3 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White pawn on b3 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00EXP",
+    "original": "Trace the connection around Black pawn on e6. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black pawn on e6",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00EXS",
+    "original": "Visualize Rh1. Find the Black queen whose attack or defense connections change.",
+    "compact": "After Rh1, whose connections change? Black queen",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00Ea3",
+    "original": "Remember the attacked undefended White pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended White pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00EbJ",
+    "original": "Find the attacked, defended Black bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Ec4",
+    "original": "Find the attacked, undefended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00EdH",
+    "original": "Is White knight on d4 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White knight on d4 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00EgR",
+    "original": "Trace the connection around White rook on h1. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White rook on h1",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00Enl",
+    "original": "Remember the attacked defended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00EoE",
+    "original": "Find the attacked, undefended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Er4",
+    "original": "Find the attacked, undefended White knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Erm",
+    "original": "Is Black knight on d3 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black knight on d3 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00Evs",
+    "original": "Trace the connection around Black pawn on f7. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black pawn on f7",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00Ezc",
+    "original": "Find the attacked, undefended White queen. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White queen",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00F2o",
+    "original": "Remember the attacked defended White bishop. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White bishop",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00F5G",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00F5e",
+    "original": "Find the attacked, undefended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00F6y",
+    "original": "Is White rook on e3 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White rook on e3 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00FAe",
+    "original": "Trace the connection around Black bishop on g8. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black bishop on g8",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00FF5",
+    "original": "Visualize Qh4. Find the Black queen whose attack or defense connections change.",
+    "compact": "After Qh4, whose connections change? Black queen",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00FGc",
+    "original": "Remember the attacked defended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00FHO",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00FND",
+    "original": "Is Black pawn on e2 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on e2 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00FON",
+    "original": "Trace the connection around White pawn on h4. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on h4",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00FPo",
+    "original": "Visualize g4. Find the Black pawn whose attack or defense connections change.",
+    "compact": "After g4, whose connections change? Black pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00FaB",
+    "original": "Remember the attacked defended White knight. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White knight",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00Feu",
+    "original": "Find the attacked, defended Black rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00FjB",
+    "original": "Find the attacked, undefended White bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Flp",
+    "original": "Is White knight on g5 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White knight on g5 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00Foc",
+    "original": "Trace the connection around White knight on c3. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White knight on c3",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00G1l",
+    "original": "Remember the attacked defended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00G81",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00GAf",
+    "original": "Is Black queen on g6 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black queen on g6 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00GBV",
+    "original": "Trace the connection around Black knight on e7. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black knight on e7",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00GHw",
+    "original": "Remember the attacked undefended White pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended White pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00GRa",
+    "original": "Find the attacked, defended Black bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00GY4",
+    "original": "Trace the connection around White rook on h7. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White rook on h7",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00GYk",
+    "original": "Visualize Qe5. Find the White bishop whose attack or defense connections change.",
+    "compact": "After Qe5, whose connections change? White bishop",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00Gc5",
+    "original": "Remember the attacked defended White rook. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White rook",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00Go6",
+    "original": "Find the attacked, undefended White knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Gt0",
+    "original": "Trace the connection around White pawn on f3. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on f3",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00GuD",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Gv1",
+    "original": "Remember the attacked defended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00Gvr",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Gz6",
+    "original": "Is White knight on d5 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White knight on d5 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00H1C",
+    "original": "Trace the connection around Black knight on c6. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black knight on c6",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00H2I",
+    "original": "Visualize Bb2. Find the Black pawn whose attack or defense connections change.",
+    "compact": "After Bb2, whose connections change? Black pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00H2L",
+    "original": "Remember the attacked undefended White pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended White pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00H5n",
+    "original": "Find the attacked, defended Black rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00H87",
+    "original": "Find the attacked, defended White queen. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White queen",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00H8a",
+    "original": "Is Black pawn on h7 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on h7 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00H9n",
+    "original": "Trace the connection around White pawn on g2. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on g2",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00HAM",
+    "original": "Visualize Qxa8. Find the Black rook whose attack or defense connections change.",
+    "compact": "After Qxa8, whose connections change? Black rook",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00HDS",
+    "original": "Remember the attacked undefended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00HEh",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00HGG",
+    "original": "Is Black pawn on f6 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on f6 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00HHN",
+    "original": "Trace the connection around White pawn on g2. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on g2",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00HLP",
+    "original": "Visualize Bb1. Find the Black knight whose attack or defense connections change.",
+    "compact": "After Bb1, whose connections change? Black knight",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00HPz",
+    "original": "Remember the attacked defended Black bishop. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended Black bishop",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00HXr",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00HZC",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00HZa",
+    "original": "Is White knight on f3 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White knight on f3 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00HeG",
+    "original": "Trace the connection around White pawn on g4. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on g4",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00Hfa",
+    "original": "Visualize Rxf2. Find the Black rook whose attack or defense connections change.",
+    "compact": "After Rxf2, whose connections change? Black rook",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00HnR",
+    "original": "Find the attacked, defended Black rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00HoG",
+    "original": "Find the attacked, undefended White rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Hpe",
+    "original": "Is Black rook on b8 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black rook on b8 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00HqY",
+    "original": "Trace the connection around Black pawn on g3. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black pawn on g3",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00Htd",
+    "original": "Visualize Qxd5. Find the Black queen whose attack or defense connections change.",
+    "compact": "After Qxd5, whose connections change? Black queen",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00Hxb",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00HzH",
+    "original": "Find the attacked, defended White rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00HzX",
+    "original": "Trace the connection around Black pawn on g7. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black pawn on g7",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00I8g",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00ICz",
+    "original": "Remember the attacked defended White queen. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White queen",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00IDw",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00IDz",
+    "original": "Find the attacked, undefended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00IF1",
+    "original": "Is Black pawn on h4 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on h4 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00IMS",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00IPp",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00ISm",
+    "original": "Is Black pawn on d6 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on d6 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00ITc",
+    "original": "Trace the connection around White bishop on b2. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White bishop on b2",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00IUT",
+    "original": "Visualize Rxd4. Find the White queen whose attack or defense connections change.",
+    "compact": "After Rxd4, whose connections change? White queen",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00IaZ",
+    "original": "Find the attacked, undefended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00IbM",
+    "original": "Is White pawn on c5 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White pawn on c5 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00IiM",
+    "original": "Find the attacked, undefended White queen. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White queen",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00InW",
+    "original": "Visualize Nxf3. Find the Black knight whose attack or defense connections change.",
+    "compact": "After Nxf3, whose connections change? Black knight",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00IqI",
+    "original": "Find the attacked, defended Black queen. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black queen",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Ivf",
+    "original": "Find the attacked, defended White rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00J1t",
+    "original": "Trace the connection around White pawn on d4. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on d4",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00J7i",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00J9b",
+    "original": "Remember the attacked defended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00JAo",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00JFF",
+    "original": "Find the attacked, undefended White queen. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White queen",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00JH5",
+    "original": "Is White pawn on c3 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White pawn on c3 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00JMV",
+    "original": "Trace the connection around White pawn on g2. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on g2",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00JO7",
+    "original": "Visualize Qc5. Find the Black rook whose attack or defense connections change.",
+    "compact": "After Qc5, whose connections change? Black rook",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00JR7",
+    "original": "Remember the attacked defended White pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00JS1",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00JYV",
+    "original": "Find the attacked, defended White knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00JZk",
+    "original": "Is White pawn on g2 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White pawn on g2 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00JaW",
+    "original": "Trace the connection around Black pawn on g5. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black pawn on g5",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00JfN",
+    "original": "Visualize Qxh3. Find the White knight whose attack or defense connections change.",
+    "compact": "After Qxh3, whose connections change? White knight",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00JqT",
+    "original": "Remember the attacked undefended Black queen. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black queen",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00JsQ",
+    "original": "Find the attacked, defended White knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00JtR",
+    "original": "Find the attacked, defended White knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00JzT",
+    "original": "Is Black pawn on g6 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on g6 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00K0G",
+    "original": "Trace the connection around White pawn on c5. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on c5",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00K7b",
+    "original": "Find the attacked, defended White knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00KAq",
+    "original": "Remember the attacked defended White pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00KHR",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00KMV",
+    "original": "Find the attacked, defended White queen. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White queen",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00KNB",
+    "original": "Is White bishop on f1 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White bishop on f1 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00KNK",
+    "original": "Trace the connection around Black bishop on d3. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black bishop on d3",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00KO5",
+    "original": "Visualize Qxh2. Find the White pawn whose attack or defense connections change.",
+    "compact": "After Qxh2, whose connections change? White pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00KVF",
+    "original": "Remember the attacked defended White knight. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White knight",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00KVO",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-0000H",
+    "original": "Trace the connection around White rook on f1. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White rook on f1",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-000Sa",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-000Zo",
+    "original": "Visualize exf6. Find the Black pawn whose attack or defense connections change.",
+    "compact": "After exf6, whose connections change? Black pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-000h0",
+    "original": "Find the attacked, undefended Black bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended Black bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-000o3",
+    "original": "Find the attacked, undefended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-000pA",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-0018S",
+    "original": "Find the attacked, defended Black rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-001XA",
+    "original": "Remember the attacked defended Black bishop. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended Black bishop",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-001m3",
+    "original": "Remember the attacked defended White pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-001om",
+    "original": "Find the attacked, undefended Black bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended Black bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-002CP",
+    "original": "Visualize Qe3. Find the Black pawn whose attack or defense connections change.",
+    "compact": "After Qe3, whose connections change? Black pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-002HE",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-002IE",
+    "original": "Is Black knight on e5 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black knight on e5 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-002KJ",
+    "original": "Trace the connection around Black pawn on d5. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black pawn on d5",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-002O7",
+    "original": "Find the attacked, defended Black bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-002Q2",
+    "original": "Is White bishop on h6 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White bishop on h6 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-002bK",
+    "original": "Find the attacked, undefended Black bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended Black bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-002e8",
+    "original": "Remember the attacked defended White rook. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White rook",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-002rd",
+    "original": "Is Black rook on g6 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black rook on g6 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-003Tx",
+    "original": "Find the attacked, undefended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-003aS",
+    "original": "Remember the attacked defended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-003jH",
+    "original": "Is Black queen on h5 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black queen on h5 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-004JD",
+    "original": "Find the attacked, undefended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-004XI",
+    "original": "Remember the attacked defended White rook. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White rook",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-004d8",
+    "original": "Is Black pawn on g4 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on g4 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-004iZ",
+    "original": "Find the attacked, undefended White bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-004zI",
+    "original": "Trace the connection around Black pawn on g5. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black pawn on g5",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-004zh",
+    "original": "Visualize Qh5. Find the Black pawn whose attack or defense connections change.",
+    "compact": "After Qh5, whose connections change? Black pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-005HG",
+    "original": "Visualize Qc2. Find the White pawn whose attack or defense connections change.",
+    "compact": "After Qc2, whose connections change? White pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-005YM",
+    "original": "Find the attacked, defended Black knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-005do",
+    "original": "Is White pawn on f4 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White pawn on f4 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-005f3",
+    "original": "Trace the connection around Black pawn on g6. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black pawn on g6",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-005jR",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-005nD",
+    "original": "Find the attacked, undefended White queen. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White queen",
+    "interaction": "single"
+  },
+  {
+    "id": "game-005wy",
+    "original": "Remember the attacked defended White knight. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White knight",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-005yO",
+    "original": "Is Black pawn on d4 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on d4 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-0068D",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-006NL",
+    "original": "Visualize Nxc6+. Find the Black rook whose attack or defense connections change.",
+    "compact": "After Nxc6+, whose connections change? Black rook",
+    "interaction": "before"
+  },
+  {
+    "id": "game-006fF",
+    "original": "Is White pawn on h2 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White pawn on h2 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-007AS",
+    "original": "Find the attacked, defended White knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-007HB",
+    "original": "Find the attacked, undefended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-007en",
+    "original": "Trace the connection around Black queen on c5. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black queen on c5",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-008LD",
+    "original": "Trace the connection around White knight on g5. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White knight on g5",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-008o6",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-0092V",
+    "original": "Find the attacked, defended Black knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-0092z",
+    "original": "Find the attacked, undefended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-009Sz",
+    "original": "Trace the connection around Black bishop on g6. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black bishop on g6",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-009Wc",
+    "original": "Visualize Ned7. Find the White knight whose attack or defense connections change.",
+    "compact": "After Ned7, whose connections change? White knight",
+    "interaction": "before"
+  },
+  {
+    "id": "game-009bR",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-009eX",
+    "original": "Trace the connection around White rook on g1. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White rook on g1",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-009fH",
+    "original": "Remember the attacked undefended Black rook. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black rook",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-009hH",
+    "original": "Find the attacked, defended Black knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-009zR",
+    "original": "Remember the attacked defended Black knight. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended Black knight",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00A1H",
+    "original": "Find the attacked, defended White knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00AB1",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Aae",
+    "original": "Trace the connection around White pawn on b7. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on b7",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00Aas",
+    "original": "Visualize Bxc2. Find the White bishop whose attack or defense connections change.",
+    "compact": "After Bxc2, whose connections change? White bishop",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00AcQ",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00AdI",
+    "original": "Is Black pawn on e6 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black pawn on e6 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00AhO",
+    "original": "Remember the attacked defended Black bishop. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended Black bishop",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00BKa",
+    "original": "Trace the connection around Black knight on c6. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black knight on c6",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00BM8",
+    "original": "Visualize Rad8. Find the Black pawn whose attack or defense connections change.",
+    "compact": "After Rad8, whose connections change? Black pawn",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00Bg0",
+    "original": "Remember the attacked undefended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00C8Y",
+    "original": "Find the attacked, defended Black bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00CbV",
+    "original": "Trace the connection around Black knight on g6. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black knight on g6",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00CcK",
+    "original": "Visualize Rxc3. Find the White rook whose attack or defense connections change.",
+    "compact": "After Rxc3, whose connections change? White rook",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00CiZ",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00CpR",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00CtD",
+    "original": "Visualize Rc4. Find the Black rook whose attack or defense connections change.",
+    "compact": "After Rc4, whose connections change? Black rook",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00DAs",
+    "original": "Trace the connection around White pawn on f5. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: White pawn on f5",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00DWo",
+    "original": "Find the attacked, defended White bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Dke",
+    "original": "Find the attacked, defended White bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Dlt",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00E29",
+    "original": "Remember the attacked defended White bishop. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White bishop",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00EBZ",
+    "original": "Find the attacked, undefended Black queen. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended Black queen",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Elq",
+    "original": "Visualize h6. Find the White queen whose attack or defense connections change.",
+    "compact": "After h6, whose connections change? White queen",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00FHX",
+    "original": "Find the attacked, undefended White rook. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White rook",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00G0z",
+    "original": "Visualize Nxe4. Find the Black bishop whose attack or defense connections change.",
+    "compact": "After Nxe4, whose connections change? Black bishop",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00G7g",
+    "original": "Find the attacked, defended Black pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended Black pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00GBX",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00GVf",
+    "original": "Find the attacked, defended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00GWg",
+    "original": "Is Black knight on c6 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black knight on c6 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00GiQ",
+    "original": "Find the attacked, undefended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00GoO",
+    "original": "Is White knight on c3 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White knight on c3 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00Gyu",
+    "original": "Find the attacked, undefended White pawn. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White pawn",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00HEx",
+    "original": "Find the attacked, undefended White bishop. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, undefended White bishop",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00Hk4",
+    "original": "Remember the attacked undefended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00Hut",
+    "original": "Remember the attacked undefended Black pawn. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black pawn",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00HzR",
+    "original": "Is White pawn on h4 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is White pawn on h4 attacked and undefended?",
+    "interaction": "verdict"
+  },
+  {
+    "id": "game-00IF7",
+    "original": "Trace the connection around Black pawn on h6. Select an attacker, then the target, then a defender.",
+    "compact": "Trace: Black pawn on h6",
+    "interaction": "trace"
+  },
+  {
+    "id": "game-00IFk",
+    "original": "Visualize Nc3. Find the White bishop whose attack or defense connections change.",
+    "compact": "After Nc3, whose connections change? White bishop",
+    "interaction": "before"
+  },
+  {
+    "id": "game-00IHi",
+    "original": "Remember the attacked undefended Black rook. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black rook",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00IUW",
+    "original": "Remember the attacked undefended Black bishop. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked undefended Black bishop",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00IYg",
+    "original": "Find the attacked, defended White knight. Tap the piece after checking its connections.",
+    "compact": "Find the attacked, defended White knight",
+    "interaction": "single"
+  },
+  {
+    "id": "game-00IpT",
+    "original": "Remember the attacked defended White knight. Tap its square after the pieces hide.",
+    "compact": "Remember the attacked defended White knight",
+    "interaction": "flash"
+  },
+  {
+    "id": "game-00J1Y",
+    "original": "Is Black queen on b8 attacked and undefended? Choose a verdict, then tap it.",
+    "compact": "Is Black queen on b8 attacked and undefended?",
+    "interaction": "verdict"
+  }
+]
